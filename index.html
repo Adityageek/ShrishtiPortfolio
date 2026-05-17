@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shrashti Tiwari - DevOps & Cloud Engineer Portfolio">
+    <title>Shrashti Tiwari | DevOps & Cloud Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">ST</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Shrashti Tiwari</h1>
+                <h2 class="hero-title">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Cloud & DevOps Engineer with 6+ years of experience in building, automating, and optimizing cloud infrastructure across AWS, Azure, and GCP.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View Experience</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-ring"></div>
+                    <div class="profile-placeholder" id="profile-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate <strong>DevOps & Cloud Engineer</strong> based in India, specializing in designing, implementing, and managing cloud infrastructure solutions. With expertise spanning <strong>AWS, Azure, and GCP</strong>, I help organizations build scalable, secure, and cost-effective cloud environments.
+                    </p>
+                    <p>
+                        My journey in tech started with a Bachelor's in Information Technology from <strong>Rajiv Gandhi Technical University</strong>. Since then, I've worked with industry leaders like <strong>Nasdaq</strong>, <strong>Cloudera</strong>, and <strong>Robert Bosch</strong>, delivering impactful solutions that drive efficiency and innovation.
+                    </p>
+                    <p>
+                        I'm particularly skilled in <strong>Infrastructure as Code (Terraform)</strong>, container orchestration, CI/CD pipelines, and cloud cost optimization. I've achieved significant results like <strong>$720K+ annual savings</strong> through strategic cloud optimizations and <strong>70% reduction</strong> in provisioning time through automation.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">6+</span>
+                            <span class="highlight-label">Years Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">3</span>
+                            <span class="highlight-label">Cloud Platforms</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">50+</span>
+                            <span class="highlight-label">Terraform Modules</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">1000+</span>
+                            <span class="highlight-label">Cloud Accounts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="tech-stack">
+                        <div class="tech-item" data-tooltip="Amazon Web Services">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Microsoft Azure">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Google Cloud Platform">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Docker">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Kubernetes">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <!-- Cloud Platforms -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="skill-title">Cloud Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-aws">AWS</span>
+                        <span class="tag tag-azure">Azure</span>
+                        <span class="tag tag-gcp">GCP</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li>EC2, S3, VPC, EKS, ECS</li>
+                        <li>Lambda, API Gateway, DynamoDB</li>
+                        <li>KMS, IAM, EFS, EBS, Kinesis</li>
+                        <li>Azure VMs, Functions, AKS</li>
+                        <li>VNets, NSGs, Application Gateways</li>
+                        <li>GCP Compute & Networking</li>
+                    </ul>
+                </div>
+
+                <!-- Infrastructure & IaC -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="skill-title">Infrastructure & IaC</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-terraform">Terraform</span>
+                        <span class="tag tag-docker">Docker</span>
+                        <span class="tag tag-k8s">K8s</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Terraform Enterprise & Open Source</li>
+                        <li>GitLab CI/CD Pipelines</li>
+                        <li>Jenkins Automation</li>
+                        <li>Docker Containerization</li>
+                        <li>Kubernetes Orchestration</li>
+                        <li>Infrastructure as Code</li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Scripting -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3 class="skill-title">Languages & Scripting</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-python">Python</span>
+                        <span class="tag tag-go">Go</span>
+                        <span class="tag tag-bash">Bash</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Python Scripting & Automation</li>
+                        <li>Go Development</li>
+                        <li>PowerShell Scripting</li>
+                        <li>Bash Shell Scripting</li>
+                        <li>API Development</li>
+                        <li>CLI Tools Development</li>
+                    </ul>
+                </div>
+
+                <!-- Monitoring & Troubleshooting -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="skill-title">Monitoring & Observability</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-datadog">Datadog</span>
+                        <span class="tag tag-splunk">Splunk</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Datadog Monitoring</li>
+                        <li>Splunk Log Analytics</li>
+                        <li>AWS CloudWatch</li>
+                        <li>Azure Monitor</li>
+                        <li>NSG Flow Logs Analysis</li>
+                        <li>Network Watchers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                Professional Experience
+            </h2>
+            <div class="timeline">
+                <!-- Cloudera -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Cloudera</h3>
+                                <span class="company-location">
+                                    <i class="fas fa-map-marker-alt"></i> Bengaluru, India
+                                </span>
+                            </div>
+                            <div class="role-info">
+                                <h4 class="role-title">DevOps Engineer</h4>
+                                <span class="role-duration">
+                                    <i class="fas fa-calendar-alt"></i> October 2025 - February 2026
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Supported cloud-based lab environments for the Cloudera Education team using Cloudera Manager, CDP, HDFS, and YARN</li>
+                            <li>Enhanced lab cluster reset scripts by adding new stages using the Cloudera CDP CLI to improve automation</li>
+                            <li>Assisted in infrastructure automation and deployment improvements across AWS environments</li>
+                            <li>Provided real-time technical support for live instructor-led classes, resolving cluster and platform issues</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>CDP</span>
+                            <span>HDFS</span>
+                            <span>YARN</span>
+                            <span>AWS</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nasdaq -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Nasdaq</h3>
+                                <span class="company-location">
+                                    <i class="fas fa-map-marker-alt"></i> Bengaluru, India
+                                </span>
+                            </div>
+                            <div class="role-info">
+                                <h4 class="role-title">Senior Cloud Engineer</h4>
+                                <span class="role-duration">
+                                    <i class="fas fa-calendar-alt"></i> January 2022 - August 2025
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Spearheaded AWS KMS cost optimization project achieving <strong>~$720K annual savings</strong> through key consolidation</li>
+                            <li>Contributed and maintained <strong>50+ production-ready Terraform modules</strong>, reducing provisioning time by 70%</li>
+                            <li>Built an in-house BlueCat IPAM provider in Go, backed by a secure GPG-based registry</li>
+                            <li>Supported Terraform Enterprise to TFOS migration for <strong>3000+ workspaces</strong></li>
+                            <li>Automated end-to-end lifecycle of cloud accounts: creation, verification, governance tagging, and decommissioning</li>
+                            <li>Managed CIDR assignments for Azure Application Gateways, implementing guardrails for <strong>300+ critical services</strong></li>
+                            <li>Automated detection and remediation of STIG violations, integrating with Splunk dashboards and CloudGuard</li>
+                            <li>Delivered multi-cloud platform support resolving <strong>~95% of high-priority incidents</strong> across 1000+ accounts</li>
+                            <li>Mentored 5+ engineers, built knowledge bases, led code reviews, and standardized runbooks</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>AWS</span>
+                            <span>Azure</span>
+                            <span>GCP</span>
+                            <span>Terraform</span>
+                            <span>Go</span>
+                            <span>Splunk</span>
+                            <span>Datadog</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robert Bosch -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Robert Bosch Engineering</h3>
+                                <span class="company-location">
+                                    <i class="fas fa-map-marker-alt"></i> Bengaluru, India
+                                </span>
+                            </div>
+                            <div class="role-info">
+                                <h4 class="role-title">Software Engineer</h4>
+                                <span class="role-duration">
+                                    <i class="fas fa-calendar-alt"></i> July 2019 - January 2022
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed a Vehicle Diagnostic tool in AWS for Accident Analysis and Monitoring with <strong>~70% accuracy</strong></li>
+                            <li>Built JSON Data Analytics and Visualization using Python for Dynamic PDF generation and automated email delivery via Amazon SES</li>
+                            <li>Responsible for end-to-end application deployment in AWS</li>
+                            <li>Integrated numerous Google Maps APIs for Map visualization, Geolocation, Street view, and Speed information</li>
+                            <li>Developed Bosch Internal Tool to automate OBD updates via Azure IoTHub, <strong>saving 40% manual efforts</strong></li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>AWS</span>
+                            <span>Python</span>
+                            <span>Azure IoT</span>
+                            <span>Google Maps API</span>
+                            <span>SES</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="timeline-item education">
+                    <div class="timeline-marker education-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Rajiv Gandhi Technical University</h3>
+                                <span class="company-location">
+                                    <i class="fas fa-map-marker-alt"></i> Bhopal, India
+                                </span>
+                            </div>
+                            <div class="role-info">
+                                <h4 class="role-title">Bachelor of Engineering (Information Technology)</h4>
+                                <span class="role-duration">
+                                    <i class="fas fa-calendar-alt"></i> 2015 - 2019
+                                </span>
+                            </div>
+                        </div>
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        I'm currently open to new opportunities and exciting projects. Whether you have a question, want to discuss cloud architecture, or just want to say hello, feel free to reach out!
+                    </p>
+                </div>
+                <div class="contact-cards">
+                    <a href="mailto:stiwari83997@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <span>stiwari83997@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+918602470245" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Phone</h4>
+                            <span>+91 8602470245</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shrashti-tiwari-08/" target="_blank" class="contact-card" id="linkedin-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>LinkedIn</h4>
+                            <span>Connect with me</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jabalpur (M.P.), India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built by <strong>Shrashti Tiwari</strong>
+                </p>
+                <div class="footer-social">
+                    <a href="mailto:stiwari83997@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2026 All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
